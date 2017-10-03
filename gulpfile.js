@@ -39,7 +39,7 @@ gulp.task('build', function () {
 
 gulp.task('bower-files', function() {
     return gulp.src(mainBowerFiles())
-        .pipe(gulp.dest('build/bower'))
+        .pipe(gulp.dest('build/js/libs'))
 });
 
 gulp.task('watch', function () {

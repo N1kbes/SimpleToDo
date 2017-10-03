@@ -1,3 +1,14 @@
-h1{
-    color: greenyellow
+.tab-pane{
+    .add-new{
+        margin: 20px 0;
+    }
+
+    .margin{
+        margin-top: 20px;
+    }
+
+    .new-task{
+        display: none;
+        margin-bottom: 20px;
+    }
 }

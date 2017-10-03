@@ -3,17 +3,55 @@
 
 <head>
     <title>What can i do</title>
-    <meta charset="UTF-8">  
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="css/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 
 <body>
-    <h1>ToDo</h1>
-    
+    <div class="container">
+        <h1>ToDo</h1>
+        <div>
+
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist" id="list-menu">
+                <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Active</a></li>
+                <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Done</a></li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="home">
+
+                    <button type="button" class="btn btn-default add-new">Add new</button>
+
+                    <div class="new-task">
+                    <div class="input-group col-md-8">
+                        <input type="text" id="new-task-text" class="form-control" placeholder="new task">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" id="create-task" type="button">Add!</button>
+                        </span>
+                    </div>
+                </div>
+
+                    <ul class="list-group need-tasks" id="need-tasks">
+                            <!-- list of active tasks -->
+                    </ul>
+                </div>
+                <div role="tabpanel" class="tab-pane done-tasks" id="profile">
+                    <ul class="list-group margin" id="done-tasks">
+                        <!-- list of done tasks -->
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
     <!-- scripts -->
-    <script src="/bower/jquery.js"></script>
-    <script src="/bower/handlebars.js"></script>
+    <script src="/js/libs/jquery.js"></script>
+    <script src="/js/libs/handlebars.js"></script>
+    <script src="/js/libs/bootstrap.js"></script>
     <script src="js/script.js"></script>
 </body>
 
