@@ -15,5 +15,8 @@
     "gulp-connect": "^5.0.0",
     "gulp-sass": "^3.1.0",
     "main-bower-files": "^2.13.1"
+  },
+  "dependencies": {
+    "eslint": "^4.8.0"
   }
 }

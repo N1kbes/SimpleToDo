@@ -4,6 +4,8 @@
 <head>
     <title>What can i do</title>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
@@ -26,14 +28,19 @@
                     <button type="button" class="btn btn-default add-new">Add new</button>
 
                     <div class="new-task">
-                    <div class="input-group col-md-8">
-                        <input type="text" id="new-task-text" class="form-control" placeholder="new task">
-                        <span class="input-group-btn">
-                            <button class="btn btn-default" id="create-task" type="button">Add!</button>
-                        </span>
+                        
+                        <div id="task-valid" class="alert alert-danger hidden col-md-8" role="alert">
+                            <span class="sr-only">Error:</span>
+                            Task field can`t be empty
+                        </div>
+                        <div class="input-group  col-md-8">
+                            <input type="text" id="new-task-text" class="form-control" placeholder="new task">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" id="create-task" type="button">Add!</button>
+                            </span>
+                        </div>
                     </div>
-                </div>
-
+                
                     <ul class="list-group need-tasks" id="need-tasks">
                             <!-- list of active tasks -->
                     </ul>
